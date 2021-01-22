@@ -8,6 +8,11 @@ import (
 	"github.com/gofrs/uuid"
 )
 
+// Database Constant
+const (
+	MYSQLTimestampFormat = `2006-01-02 15:04:05`
+)
+
 // GenerateUUID ....
 func GenerateUUID() string {
 	uuid := uuid.Must(uuid.NewV4())
