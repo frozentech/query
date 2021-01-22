@@ -4,7 +4,15 @@ import (
 	"fmt"
 	"reflect"
 	"strings"
+
+	"github.com/gofrs/uuid"
 )
+
+// GenerateUUID ....
+func GenerateUUID() string {
+	uuid := uuid.Must(uuid.NewV4())
+	return uuid.String()
+}
 
 // Contains ....
 func Contains(a []string, x string) bool {
